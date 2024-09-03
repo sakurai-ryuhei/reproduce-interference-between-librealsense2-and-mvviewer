@@ -1,0 +1,16 @@
+name: check-build
+
+on: [push]
+
+jobs:
+  build-linux-gcc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo ./library_installers/install_libraries.sh
+      - name: Test
+        run: |
+          ./test.sh
