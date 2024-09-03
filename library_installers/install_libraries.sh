@@ -8,7 +8,8 @@ sudo apt install -y \
     lld \
     git \
     curl \
-    software-properties-common
+    software-properties-common \
+    libdw-dev
 
 sudo pip install cmake==3.26.3
 
