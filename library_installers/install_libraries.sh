@@ -8,6 +8,7 @@ sudo apt install -y \
     lld \
     cmake \
     git \
+    wget \
     curl \
     software-properties-common \
     libdw-dev
