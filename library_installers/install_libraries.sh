@@ -13,9 +13,6 @@ sudo apt install -y \
     software-properties-common \
     libdw-dev
 
-# Show versions of installed libusb related packages.
-dpkg -l libusb* | cat
-
 directory_path_of_this_script=$(dirname $(readlink -f "$0"))
 $directory_path_of_this_script/librealsense2_installer/install_librealsense2.sh
 $directory_path_of_this_script/mvviewer_installer/install_mvviewer.sh
