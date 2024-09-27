@@ -4,10 +4,7 @@ on: [push]
 
 jobs:
   build-linux-gcc:
-    strategy:
-      matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
